@@ -76,20 +76,21 @@ These insights help translate data into strategy for decision-makers.
 ## 📂 Repository Structure
 data-warehouse-project/
 │
-├── datasets/ # Raw ERP and CRM CSV files
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/ # Documentation and architecture diagrams
-│ ├── data_architecture.png # Overall project architecture
-│ ├── data_catalog.md # Field definitions and metadata
-│ ├── data_flow.png # Data movement diagram
-│ ├── data_models.png # Star schema visualizations
-│ ├── naming-conventions.md # Standards for consistency
+├── docs/                               # Project documentation and architecture details
+│   ├── data_architecture.png       # Draw.io file shows the project's architecture
+│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.png              # Draw.io file for the data flow diagram
+│   ├── data_models.png              # Draw.io file for data models (star schema)
+│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
-├── scripts/ # SQL scripts for each layer
-│ ├── bronze/ # Raw data loading
-│ ├── silver/ # Cleaning and standardizing
-│ ├── gold/ # Star schema creation
+├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
 │
-├── tests/ # Data validation and quality checks
+├── tests/                              # Test scripts and quality files
 │
-├── README.md # Project overview and instructions
+└── README.md                           # Project overview and instructions
+```
